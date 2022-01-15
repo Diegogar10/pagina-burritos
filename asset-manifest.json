@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pagina-burritos/static/css/main.31425f35.css",
+    "main.js": "/pagina-burritos/static/js/main.746471e5.js",
+    "static/media/logoBurrito.png": "/pagina-burritos/static/media/logoBurrito.ee62c5f9587da6f9b968.png",
+    "static/media/pinonIcon.svg": "/pagina-burritos/static/media/pinonIcon.b66420a94cb2d408e51386755081d4ca.svg",
+    "index.html": "/pagina-burritos/index.html",
+    "main.31425f35.css.map": "/pagina-burritos/static/css/main.31425f35.css.map",
+    "main.746471e5.js.map": "/pagina-burritos/static/js/main.746471e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31425f35.css",
+    "static/js/main.746471e5.js"
+  ]
+}
