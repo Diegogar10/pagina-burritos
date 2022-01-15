@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <ModalContruccion empresa='Tremendo Burrito Colombia'></ModalContruccion>
+    <ModalContruccion empresa='Tremendo Burrito Colombia'/>
   );
 }
 
