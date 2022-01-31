@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.31425f35.css",
-    "main.js": "/static/js/main.6a096baa.js",
-    "static/media/logoBurrito.png": "/static/media/logoBurrito.ee62c5f9587da6f9b968.png",
+    "main.js": "/static/js/main.f1bb1aa0.js",
+    "static/media/logoBurrito.png": "/static/media/logoBurrito.3c06528b9dc472427ab2.png",
     "static/media/pinonIcon.svg": "/static/media/pinonIcon.b66420a94cb2d408e51386755081d4ca.svg",
     "index.html": "/index.html",
     "main.31425f35.css.map": "/static/css/main.31425f35.css.map",
-    "main.6a096baa.js.map": "/static/js/main.6a096baa.js.map"
+    "main.f1bb1aa0.js.map": "/static/js/main.f1bb1aa0.js.map"
   },
   "entrypoints": [
     "static/css/main.31425f35.css",
-    "static/js/main.6a096baa.js"
+    "static/js/main.f1bb1aa0.js"
   ]
 }
