@@ -1,0 +1,12 @@
+.menu__container{
+    position: absolute;
+    width: 350px;
+}
+.menu__content {
+    position: relative;
+}
+.menu__icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

@@ -56,6 +56,6 @@
 }
 
 .menu-visible:hover div {
-    background-color: var(--bt-light-text2-color);
+    background-color: var(--bg-light-color);
     border-radius: 1px;
 }

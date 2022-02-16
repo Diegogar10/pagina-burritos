@@ -1,16 +1,21 @@
 import React from 'react';
-import { ButtonGeneric } from '../Components/ButtonGeneric';
-import { ButtonMenu } from '../Components/ButtonMenu';
+import { AnchorGeneric } from '../Components/AnchorGeneric';
+import { Menu } from '../containers/Menu';
 import { ModalContruccion } from '../Pages/ModalContruccion';
 import './App.css';
 
 function App() {
+
+
+
   return (
-    <ModalContruccion empresa='Tremendo Burrito Colombia'/> 
-    //<div>
-      //<ButtonMenu></ButtonMenu>
-      //<ButtonGeneric nameButton='Nosotros'/>
-    //</div>
+    //<ModalContruccion empresa='Tremendo Burrito Colombia'/> 
+    <main className='main__container'>
+      <Menu>
+        <AnchorGeneric nombre='Nosotros0'/>
+        <AnchorGeneric nombre='Nosotros1'/>
+      </Menu>
+    </main>
   );
 }
 
