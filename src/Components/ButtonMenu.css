@@ -1,0 +1,61 @@
+.menu-invisible, .menu-visible{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.menu-invisible{
+    background-color: var(--bt-light-text-color);
+}
+.menu-visible{
+    background-color: var(--bt-light-text2-color);
+}
+.menu-invisible:hover {
+    background-color: var(--bg-light-color);
+}
+.menu-visible:hover {
+    background-color: var(--bt-light-text-color);
+}
+
+.menu-invisible div, .menu-visible div{
+    width: 15px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.menu-invisible div{
+    margin: 2px;
+    background-color: var(--bt-light-text2-color);
+    transition: 1s all ;
+}
+.menu-visible div:nth-of-type(1){
+    width: 18px;
+    position: absolute;
+    background-color: var(--bt-light-text-color);
+    transform: rotate(45deg);
+    border-radius: 1px;
+    transition: 1s all ;
+}
+.menu-visible div:nth-of-type(2){
+    width: 18px;
+    position: absolute;
+    background-color: var(--bt-light-text-color);
+    transform: rotate(135deg);
+    border-radius: 1px;
+    transition: 1s all ;
+}
+
+.menu-invisible:hover div {
+    background-color: var(--bt-light-text-color);
+    border-radius: 1px;
+}
+
+.menu-visible:hover div {
+    background-color: var(--bt-light-text2-color);
+    border-radius: 1px;
+}

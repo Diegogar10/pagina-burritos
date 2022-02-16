@@ -1,0 +1,6 @@
+.button-light{
+    font-size: 1.6rem;
+    color: var(--bt-light-text-color);
+    border-radius: 5px;
+    padding: 5px;
+}
