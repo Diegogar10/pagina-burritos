@@ -1,12 +1,13 @@
 import React from "react";
+import { AppContext } from "../Context/AppContext";
 import './ButtonMenu.css'
 
 const ButtonMenu = ()=> {
-    const [menuState, setMenuState] = React.useState(false);
-    const toggleMenuState = ()=> setMenuState(!menuState);
+    const {state, toggleMenuState} = React.useContext(AppContext);
+    
     
     return(
-        menuState? <button className="menu-visible"
+        state.menuState? <button className="menu-visible"
                                 onClick={toggleMenuState}>
                             <div></div>
                             <div></div>

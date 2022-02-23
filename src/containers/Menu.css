@@ -1,7 +1,24 @@
 .menu__container{
     position: absolute;
     width: 350px;
+    height: 100vh;
+    left: -305px;
+    border-radius: 20px;
+    box-shadow: slategrey 2px 2px 3px;
+    background-color: var(--bt-light-text2-color);
+    transition: all 1s;
 }
+
+.desplegado{
+    left: -50px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu__content {
     position: relative;
 }
