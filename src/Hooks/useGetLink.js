@@ -3,20 +3,32 @@ import React from "react";
 const links = {
     menu:[{
         title:'Nosotros',
-        url:''
+        url:'/nosotros'
         },
         {
         title:'Recetas',
-        url: '' 
+        url: '/recetas' 
         }, 
         {
         title:'Arma tu burro',
-        url:''
+        url:'/arma-tu-burro'
         },
         {
-        title:'Contactanos',
-        url:''
+        title:'Contactenos',
+        url:'/contactenos'
     }],
+    redes:[{
+        title:'Facebook',
+        url:'',
+    },
+    {
+        title:'Instagram',
+        url:''
+    },
+    {
+        title:'Youtube',
+        url:''
+    }]
 }
 
 const useGetLinks = ()=>(links);

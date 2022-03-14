@@ -8,16 +8,16 @@ const Menu = ({children})=> {
     const {state} = React.useContext(AppContext);
 
     return(
-        <aside className={state.menuState && 'menu__container desplegado'||'menu__container'}>
-            <nav className="menu__content">
+        <nav className={state.menuState && 'menu__container desplegado'||'menu__container'}>
+            <section className="menu__content">
                 <div className="menu__icon">
                     <ButtonMenu/>
                 </div>
                 <ul>
                     {children}
                 </ul>
-            </nav>
-        </aside>
+            </section>
+        </nav>
     );
 }
 
