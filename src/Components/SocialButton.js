@@ -1,10 +1,11 @@
 import React from "react";
+import './SocialButton.css'
 
-const SocialButton = ({title})=>{
+const SocialButton = ({title, url, urlImage})=>{
     return(
-        <button>
-            {title}
-        </button>
+        <a href={url}> 
+            <img src={urlImage} alt={title}/>
+        </a>
     );
 };
 
