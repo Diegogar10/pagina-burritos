@@ -8,19 +8,23 @@ const iconoWhatsapp = require ('../Images/components/whatsapp.png');
 const links = {
     menu:[{
         title:'Nosotros',
-        url:'/nosotros'
+        url:'/nosotros',
+        footer: false
         },
         {
         title:'Recetas',
-        url: '/recetas' 
+        url: '/recetas', 
+        footer: false
         }, 
         {
         title:'Arma tu burro',
-        url:'/arma-tu-burro'
+        url:'/arma-tu-burro',
+        footer: false
         },
         {
         title:'Contactenos',
-        url:'/contactenos'
+        url:'/contactenos',
+        footer: false
     }],
     redes:[{
         title:'Facebook',

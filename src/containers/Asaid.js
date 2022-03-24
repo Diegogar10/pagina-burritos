@@ -6,7 +6,6 @@ const Asaid = ({info, what})=>{
     return(
         <aside className="socialMedia">
             <div className="socialMedia__container">
-                {console.log(info)}
                 {info.map((item)=>(
                     <SocialButton title={item.title} url={item.url} urlImage={item.urlImage} />
                 ))}

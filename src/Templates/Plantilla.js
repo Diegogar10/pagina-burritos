@@ -18,7 +18,7 @@ const Plantilla = ({children}) =>{
         <div className='main__container'>
             <Menu>
                 {menu.map((item)=>(
-                    <AnchorGeneric nombre={item.title} url={item.url}/>
+                    <AnchorGeneric nombre={item.title} url={item.url} footerState={item.footer}/>
                 ))}
             </Menu>
             <main className="main__content">

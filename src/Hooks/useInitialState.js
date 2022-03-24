@@ -14,21 +14,15 @@ const useInitialState = ()=>{
         menuState: !state.menuState
     });
 
-    const homeTrue = ()=> setState({
+    const setHome = (value)=> setState({
         ...state,
-        isHome: true,
-    });
-
-    const homeFalse = ()=> setState({
-        ...state,
-        isHome: false,
+        isHome: value,
     });
 
     return({
         state,
         toggleMenuState,
-        homeFalse,
-        homeTrue
+        setHome
     })
 }
 

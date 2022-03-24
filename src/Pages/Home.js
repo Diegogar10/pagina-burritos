@@ -1,15 +1,20 @@
 import React from "react";
-import { AppContext } from "../Context/AppContext";
+import { PanelIngredients } from "../Containers/PanelIngredients";
+import { PanelLogo } from "../Containers/PanelLogo";
+import { TextHome } from "../Containers/TextHome";
+import './Styles/Home.scss'
 
 const Home = ()=>{
 
-    const { homeTrue } = React.useContext(AppContext);
     
 
     return(
         
-        <h2>{homeTrue}Home</h2>
-        
+        <div className="Home">
+            <PanelLogo clase="Logo"></PanelLogo>
+            <TextHome clase="Texto"></TextHome>
+            <PanelIngredients clase="Ingredientes"></PanelIngredients>
+        </div>
         
     );
 };

@@ -1,0 +1,38 @@
+%conf1_panels{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(245,245,245,0.88);
+    box-shadow: black 0px 0px 5px;
+}
+
+.Home {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr 7fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    background:  url(../../Images/Home/home-fondo2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.Logo {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+    @extend %conf1_panels;
+    
+    img{
+        width: 175px;
+    }
+}
+
+.Texto{
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+
+.Ingredientes{
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+    @extend %conf1_panels;
+}
