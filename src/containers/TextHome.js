@@ -2,7 +2,9 @@ import React from "react";
 
 const TextHome = ({clase}) => {
     return(
-        <h3 className={clase}>Otro2</h3>
+        <section className={clase}>
+            <h3 >Ven y vive la experiencia de armar tu burrito como quieras!</h3>
+        </section>
     )
 }
 

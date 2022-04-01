@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Handlee';
+    src: url('../../Assets/Fonts/Handlee-Regular.ttf');
+}
+@font-face {
+    font-family: 'Merien';
+    src: url('../../Assets/Fonts/Merienda-Bold.ttf');
+}
+@font-face {
+    font-family: 'Mitr';
+    src: url('../../Assets/Fonts/Mitr-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../../Assets/Fonts/Pacifico-Regular.ttf');
+}
+
+
+$Fuente-Titulos-Claros: 'Mitr', sans-serif;
+
 %conf1_panels{
     display: flex;
     justify-content: center;
@@ -26,9 +47,22 @@
     }
 }
 
-.Texto{
+.Texto {
     grid-column: 2 / 3;
     grid-row: 2/3;
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.Texto h3{
+    color: aliceblue;
+    width: 260px;
+    text-shadow: black 1px 1px 10px;
+    font-size: 2.4rem;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+    font-family: $Fuente-Titulos-Claros;
 }
 
 .Ingredientes{
