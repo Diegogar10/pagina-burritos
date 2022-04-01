@@ -3,7 +3,15 @@ import React from "react";
 const TextHome = ({clase}) => {
     return(
         <section className={clase}>
-            <h3 >Ven y vive la experiencia de armar tu burrito como quieras!</h3>
+            <h2 >Arma <br/>tu burrito</h2> 
+            <h3>Vive la experiencia!</h3>
+            <div className="opt__container">
+                <div className="opt"></div>
+                <div className="opt"></div>
+                <div className="opt"></div>
+                <div className="opt"></div>
+                <div className="opt"></div>
+            </div>
         </section>
     )
 }
