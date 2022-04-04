@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from '../Context/AppContext';
-import './AnchorGeneric.css';
+import './AnchorGeneric.scss';
 
 
 

@@ -1,10 +1,11 @@
 import React from "react";
-import './SocialButton.css'
+import './SocialButton.scss';
 
 const SocialButton = ({title, url, urlImage})=>{
     return(
-        <a href={url}> 
+        <a className="ancla__social" href={url}> 
             <img src={urlImage} alt={title}/>
+            <p>{title}</p>
         </a>
     );
 };

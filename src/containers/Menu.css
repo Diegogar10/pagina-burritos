@@ -1,11 +1,12 @@
 .menu__container{
     position: absolute;
-    width: 350px;
+    padding-top: 30px;
+    width: 270px;
     height: 100vh;
-    left: -305px;
+    left: -275px;
     border-radius: 20px;
-    box-shadow: slategrey 2px 2px 3px;
-    background-color: var(--bt-light-text2-color);
+    box-shadow: #fafafa5f 1px 1px 3px;
+    background: var(--white-ice);
     transition: all 1s;
 }
 
@@ -22,8 +23,12 @@ ul{
 .menu__content {
     position: relative;
 }
-.menu__icon {
+.menu__container .menu__icon {
     position: absolute;
+    right: -45px;
+    top: -25px;
+    transition: 1s;
+}
+.desplegado .menu__icon {
     right: 5px;
-    top: 5px;
 }

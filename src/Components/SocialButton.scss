@@ -1,0 +1,35 @@
+
+$Fuente-texto-claro: 'Handlee', sans-serif;
+
+.ancla__social{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    transition: all 500ms;
+}
+
+
+.ancla__social:hover {
+    transform: translateX(-30px);
+}
+
+.ancla__social img{
+    width: 40px;
+    height: 40px;
+    box-shadow: #bcd5d6 0px 0px 5px;
+    border-radius: 50%;
+}
+
+.ancla__social p{
+    font-family: $Fuente-texto-claro;
+    color: #bcd5d6;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 8px;
+    display: none;
+    transition: all 1s;
+}
+
+.ancla__social:hover p{
+    display: block;
+}

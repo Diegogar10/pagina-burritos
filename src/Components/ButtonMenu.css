@@ -10,13 +10,13 @@
     border: none;
 }
 .menu-invisible{
-    background-color: var(--bt-light-text-color);
+    background-color: var(--bt-light-text2-color);
 }
 .menu-visible{
     background-color: var(--bt-light-text2-color);
 }
 .menu-invisible:hover {
-    background-color: var(--bg-light-color);
+    background-color: var(--bt-light-text-color);
 }
 .menu-visible:hover {
     background-color: var(--bt-light-text-color);
@@ -30,8 +30,8 @@
 
 .menu-invisible div{
     margin: 2px;
-    background-color: var(--bt-light-text2-color);
     transition: 1s all ;
+    background-color: var(--bt-light-text-color);
 }
 .menu-visible div:nth-of-type(1){
     width: 18px;
@@ -51,7 +51,7 @@
 }
 
 .menu-invisible:hover div {
-    background-color: var(--bt-light-text-color);
+    background-color: var(--bt-light-text2-color);
     border-radius: 1px;
 }
 
