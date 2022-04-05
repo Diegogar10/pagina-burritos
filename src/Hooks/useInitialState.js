@@ -2,7 +2,8 @@ import React from "react";
 
 const initialState = {
     typeStyle: false,
-    menuState: false, 
+    menuState: false,
+    optImage:'opt1', 
     isHome:true
 }
 
@@ -19,9 +20,15 @@ const useInitialState = ()=>{
         isHome: value,
     });
 
+    const setOptImage = (value) => setState({
+        ...state,
+        optImage: value,
+    });
+
     return({
         state,
         toggleMenuState,
+        setOptImage,
         setHome
     })
 }

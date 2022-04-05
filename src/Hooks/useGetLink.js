@@ -47,6 +47,36 @@ const links = {
             url:'https://www.whatsapp.com/',
             urlImage:iconoWhatsapp
         }
+    ],
+    images:[
+        {
+            title:'opt1',
+            class:'opt',
+            text1:'Arma',
+            text2:'tu burrito',
+            text3:'Vive la Experiencia'
+        },
+        {
+            title:'opt2',
+            class:'opt',
+            text1:'Pide',
+            text2:'tu burro',
+            text3:'Deleita tu paladar!'
+        },
+        {
+            title:'opt3',
+            class:'opt',
+            text1:'Elige el',
+            text2:'burrito',
+            text3:'Acompañalo como gustes!'
+        },
+        {
+            title:'opt4',
+            class:'opt',
+            text1:'Quieres',
+            text2:'Sorprenderte?',
+            text3:'Escoge los ingredientes!'
+        }
     ]
     }
 
