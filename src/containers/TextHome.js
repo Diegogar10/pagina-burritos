@@ -4,6 +4,7 @@ import { AppContext } from "../Context/AppContext";
 
 const TextHome = ({clase}) => {
    
+    let optCount = 0;
     const { images } = useGetLinks();
     const { state, setOptImage } = React.useContext(AppContext);
     
@@ -22,6 +23,20 @@ const TextHome = ({clase}) => {
     const getMessage = (item) => {
         return images.filter(image=>image.title===item);
     }
+
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            
+            if(optCount >= images.length - 1){
+                optCount = 0;
+            }else{
+                optCount++;
+            }
+            setOptImage(images[optCount].title);
+        }, 4500);
+        return () => clearInterval(interval);
+      }, [state.menuState]);
 
 
     return(

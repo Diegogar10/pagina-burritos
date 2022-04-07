@@ -59,23 +59,23 @@ const links = {
         {
             title:'opt2',
             class:'opt',
-            text1:'Pide',
-            text2:'tu burro',
-            text3:'Deleita tu paladar!'
+            text1:'Escoge',
+            text2:'el tuyo',
+            text3:'Disfrutalo en familia!'
         },
         {
             title:'opt3',
             class:'opt',
-            text1:'Elige el',
-            text2:'burrito',
-            text3:'Acompañalo como gustes!'
+            text1:'Elige',
+            text2:'ingredientes',
+            text3:'Deleita tu paladar!'
         },
         {
             title:'opt4',
             class:'opt',
-            text1:'Quieres',
-            text2:'Sorprenderte?',
-            text3:'Escoge los ingredientes!'
+            text1:'El mejor',
+            text2:'burrito',
+            text3:'Como lo quieres!'
         }
     ]
     }

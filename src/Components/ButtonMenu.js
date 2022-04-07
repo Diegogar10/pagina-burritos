@@ -6,14 +6,18 @@ const ButtonMenu = ()=> {
     const {state, toggleMenuState} = React.useContext(AppContext);
     
     
+    const handleClick = () => {
+        toggleMenuState();
+    }
+
     return(
         state.menuState? <button className="menu-visible"
-                                onClick={toggleMenuState}>
+                                onClick={handleClick}>
                             <div></div>
                             <div></div>
                         </button> 
                         :<button className="menu-invisible"
-                                onClick={toggleMenuState}>
+                                onClick={handleClick}>
                             <div></div>
                             <div></div>
                             <div></div>
