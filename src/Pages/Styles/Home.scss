@@ -23,7 +23,7 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     display: flex;
     justify-content: center;
     padding: 10px;
-    background: rgba(245,245,245,0.92);
+    background: rgba(245,245,245,0.7);
     box-shadow: black 0px 0px 5px;
 }
 
@@ -55,7 +55,7 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     grid-column: 2 / 3;
     grid-row: 1/2;
     @extend %conf1_panels;
-    
+    border-radius: 0px 0px 15px 15px;
     img{
         width: 175px;
     }
@@ -116,8 +116,9 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     opacity: 1;
 }
 
-.Ingredientes{
+.description{
     grid-column: 2 / 3;
     grid-row: 3/4;
     @extend %conf1_panels;
+    border-radius:15px 15px 0px 0px;
 }

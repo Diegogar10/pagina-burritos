@@ -15,7 +15,7 @@ const Home = ()=>{
         <div className={`Home ${state.optImage}`}>
             <PanelLogo clase="Logo"></PanelLogo>
             <TextHome clase="Texto"></TextHome>
-            <PanelIngredients clase="Ingredientes"></PanelIngredients>
+            <PanelIngredients clase="description"></PanelIngredients>
         </div>
         
     );

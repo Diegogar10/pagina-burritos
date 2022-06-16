@@ -5,7 +5,7 @@
     height: 100vh;
     left: -275px;
     border-radius: 20px;
-    box-shadow: #fafafa5f 1px 1px 3px;
+    box-shadow: #fafafa6e 1px 1px 5px;
     background: var(--white-ice);
     transition: all 1s;
 }
@@ -31,4 +31,9 @@ ul{
 }
 .desplegado .menu__icon {
     right: 5px;
+}
+
+.menu__content .container__link a{
+    color: aliceblue;
+    text-shadow: aliceblue 0px 0px 3px;
 }
