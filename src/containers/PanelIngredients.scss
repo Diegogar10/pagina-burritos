@@ -1,0 +1,20 @@
+.description{
+    p{
+        //font-family: 'Chewy','sans-serif';
+        //font-weight: 100;
+        font-family: 'Handlee','sans-serif';
+        font-weight: bold;
+        margin-top: 7px;    
+        font-size: 1.5rem;
+        text-align: center;
+        span {
+            display: block;
+            margin-top: 7px;    
+            font-size: 1.4rem;
+        }
+    }
+    .container__link a{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}

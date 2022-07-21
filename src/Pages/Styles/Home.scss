@@ -15,7 +15,10 @@
     font-family: 'Pacifico';
     src: url('../../Assets/Fonts/Pacifico-Regular.ttf');
 }
-
+@font-face {
+    font-family: 'Chewy';
+    src: url('../../Assets/Fonts/Chewy.ttf');
+}
 
 $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
 
@@ -120,5 +123,8 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     grid-column: 2 / 3;
     grid-row: 3/4;
     @extend %conf1_panels;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     border-radius:15px 15px 0px 0px;
 }
