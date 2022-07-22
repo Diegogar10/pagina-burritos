@@ -1,29 +1,41 @@
 {
   "files": {
-    "main.css": "/static/css/main.a05ccf98.css",
-    "main.js": "/static/js/main.f5d076bf.js",
+    "main.css": "/static/css/main.d21ea751.css",
+    "main.js": "/static/js/main.117aff8d.js",
     "static/media/home-fondo4hd.jpg": "/static/media/home-fondo4hd.c4c1e9a743d074dd9e5f.jpg",
     "static/media/home-fondo5hd.jpg": "/static/media/home-fondo5hd.3c2211ac57c07dd9997e.jpg",
     "static/media/Pacifico-Regular.ttf": "/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
     "static/media/home-fondo3.jpg": "/static/media/home-fondo3.972efcfe0311d063dbcd.jpg",
-    "static/media/Mitr-Regular.ttf": "/static/media/Mitr-Regular.0ae06c243eeaf39df606.ttf",
     "static/media/logo.png": "/static/media/logo.3c06528b9dc472427ab2.png",
     "static/media/logoBurrito.png": "/static/media/logoBurrito.3c06528b9dc472427ab2.png",
     "static/media/fondoOscuro.png": "/static/media/fondoOscuro.73f8233d8a74a331f784.png",
     "static/media/home-fondo2.jpg": "/static/media/home-fondo2.67c6b954503db54e6406.jpg",
     "static/media/instagram.png": "/static/media/instagram.79535458a8a6d88f81d4.png",
     "static/media/Handlee-Regular.ttf": "/static/media/Handlee-Regular.54590e94ca812eefb4fd.ttf",
-    "static/media/Merienda-Bold.ttf": "/static/media/Merienda-Bold.45a68bbd1460a4b81261.ttf",
+    "static/media/picoGallo.png": "/static/media/picoGallo.c89392e137f5743d3b4f.png",
+    "static/media/pollo.png": "/static/media/pollo.2e98d6008e883ab21b1b.png",
+    "static/media/cerdo.png": "/static/media/cerdo.2911c36cb5858cfbc06b.png",
+    "static/media/guacamole.png": "/static/media/guacamole.bba84fcd248a2ae5044c.png",
+    "static/media/lechuga.png": "/static/media/lechuga.ba810083866c352a64e8.png",
+    "static/media/chorizo.png": "/static/media/chorizo.d65d1eadc068e5a65fe3.png",
+    "static/media/maiz.png": "/static/media/maiz.87b90ffb17e96e38b32e.png",
+    "static/media/platano.png": "/static/media/platano.06b67576aef49ecac533.png",
+    "static/media/frijol.png": "/static/media/frijol.5d488f09e215c22ac50b.png",
+    "static/media/jalapeno.png": "/static/media/jalapeno.d413f77b24ad5b8aef6a.png",
+    "static/media/huevo.png": "/static/media/huevo.a019a10167aa05fd19fe.png",
+    "static/media/tomates.png": "/static/media/tomates.aba76ab0d9363a032349.png",
+    "static/media/queso.png": "/static/media/queso.80d56058fb597b2630e3.png",
     "static/media/whatsapp.png": "/static/media/whatsapp.1dd8ca2765f1f177ab22.png",
+    "static/media/champinon.png": "/static/media/champinon.2d466520ec4afedb1847.png",
     "static/media/youtube.png": "/static/media/youtube.060528b6e83f2004078d.png",
     "static/media/facebook.png": "/static/media/facebook.a5def58db1e9c1b38269.png",
     "static/media/pinonIcon.svg": "/static/media/pinonIcon.b66420a94cb2d408e51386755081d4ca.svg",
     "index.html": "/index.html",
-    "main.a05ccf98.css.map": "/static/css/main.a05ccf98.css.map",
-    "main.f5d076bf.js.map": "/static/js/main.f5d076bf.js.map"
+    "main.d21ea751.css.map": "/static/css/main.d21ea751.css.map",
+    "main.117aff8d.js.map": "/static/js/main.117aff8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a05ccf98.css",
-    "static/js/main.f5d076bf.js"
+    "static/css/main.d21ea751.css",
+    "static/js/main.117aff8d.js"
   ]
 }
