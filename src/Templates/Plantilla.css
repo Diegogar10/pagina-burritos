@@ -33,15 +33,15 @@
         width: 75%;
     }
 }
-@media screen and (min-height:750px){
+@media screen and (min-height:900px){
    
     
     .main__container{
-        height: 760px;
+        height: 900px;
     }
     
     .main__content{
-        height: 760px;
+        height: 900px;
     }
 }
 @media screen and (max-width:1024px){
