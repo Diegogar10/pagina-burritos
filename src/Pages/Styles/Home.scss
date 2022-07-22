@@ -2,7 +2,6 @@
     font-family: 'Handlee';
     src: url('../../Assets/Fonts/Handlee-Regular.ttf');
 }
-/* 
 @font-face {
     font-family: 'Merien';
     src: url('../../Assets/Fonts/Merienda-Bold.ttf');
@@ -11,14 +10,14 @@
     font-family: 'Mitr';
     src: url('../../Assets/Fonts/Mitr-Regular.ttf');
 }
-    @font-face {
-    font-family: 'Chewy';
-    src: url('../../Assets/Fonts/Chewy.ttf');
-} */
 
 @font-face {
     font-family: 'Pacifico';
     src: url('../../Assets/Fonts/Pacifico-Regular.ttf');
+}
+@font-face {
+    font-family: 'Chewy';
+    src: url('../../Assets/Fonts/Chewy.ttf');
 }
 
 $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
@@ -27,7 +26,7 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     display: flex;
     justify-content: center;
     padding: 10px;
-    width: 420px;
+    width: 430px;
     overflow: hidden;
     background: rgba(245,245,245,0.7);
     box-shadow: black 0px 0px 5px;
@@ -36,9 +35,9 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
 .Home {
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: 1fr 5fr 7fr;
-    grid-template-rows: 2fr 3fr 4fr;
+    grid-template-rows: 2fr 3fr 3fr;
     background-size: cover;
     box-shadow: rgba(50,0,0,0.95) 0px 0px 15px;
     transition: all 1s;
@@ -60,13 +59,10 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
 .Logo {
     grid-column: 2 / 3;
     grid-row: 1/2;
-    height: 150px;
     @extend %conf1_panels;
     border-radius: 0px 0px 15px 15px;
     img{
-        margin-top: -10px;
         width: 175px;
-        height: 150px;
     }
 }
 
@@ -133,4 +129,29 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     align-items: center;
     justify-content: space-between;
     border-radius:15px 15px 0px 0px;
+}
+
+@media screen and (max-width:1024px){
+    .Home {
+        grid-template-columns: 3fr 5fr 7fr;
+        grid-template-rows: 2fr 3fr 3fr;
+    }
+}
+
+@media screen and (max-width:768px){
+    .Home {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 3fr 3fr;
+    }
+}
+@media screen and (max-width:425px){
+    %conf1_panels{
+        width: 100%;
+        min-width: 320px;
+    }
+    
+    .Home {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 3fr 3fr;
+    }
 }

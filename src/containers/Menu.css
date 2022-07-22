@@ -2,12 +2,13 @@
     position: absolute;
     padding-top: 30px;
     width: 270px;
-    height: 100vh;
+    height: 100%;
     left: -275px;
     border-radius: 20px;
     box-shadow: #fafafa6e 1px 1px 5px;
     background: var(--white-ice);
     transition: all 1s;
+    z-index: 10;
 }
 
 .desplegado{
@@ -37,3 +38,26 @@ ul{
     color: aliceblue;
     text-shadow: aliceblue 0px 0px 3px;
 }
+ @media screen and (min-height:750px){
+    .menu__container{
+        width: 100%;
+        left: 0;
+        right: 0;
+        background: #000000d0;
+        transform: translateX(-100%);
+    } 
+    .menu__container .menu__icon {
+        right: -50px;
+    }
+    .desplegado{
+        transform: translateX(0px);
+    }
+    .desplegado .menu__icon {
+        left: 10px;
+    }
+    ul {
+        height: 60vh;
+        justify-content: space-between;
+    }
+
+} 

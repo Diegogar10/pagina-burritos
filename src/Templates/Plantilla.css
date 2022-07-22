@@ -1,11 +1,52 @@
-.main__container{
-    width: 100%;
+#root{
+    display: flex;
+    width: 100vw;
+    min-width: 320px;
     height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.main__container{
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    height:100%;
     background: url('../Images/Home/fondoOscuro.png') repeat;
 }
 
 .main__content{
     width: 75%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
+}
+
+@media screen and (min-width:1440px){
+   
+    
+    .main__container{
+        width: 1440px;
+    }
+    
+    .main__content{
+        width: 75%;
+    }
+}
+@media screen and (min-height:750px){
+   
+    
+    .main__container{
+        height: 760px;
+    }
+    
+    .main__content{
+        height: 760px;
+    }
+}
+@media screen and (max-width:1024px){
+   
+    .main__content{
+        width: 100%;
+    }
 }

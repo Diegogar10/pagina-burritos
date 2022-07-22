@@ -33,3 +33,10 @@ $Fuente-texto-claro: 'Handlee', sans-serif;
 .ancla__social:hover p{
     display: block;
 }
+
+@media screen and (max-width:768px){
+    .ancla__social{
+        width: 40px;
+
+    }
+}
