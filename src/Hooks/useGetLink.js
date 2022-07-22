@@ -180,6 +180,29 @@ const links = {
             cant:'50g',
             image:ingredientes_image.platano,
             id:'fp0014'
+        },{
+            title:'Tomates Cherry',
+            cant:'50g',
+            image:ingredientes_image.tomates,
+            id:'fp001'
+        },
+        {
+            title:'Cerdo Desmechado',
+            cant:'100g',
+            image:ingredientes_image.cerdo,
+            id:'fp002'
+        },
+        {
+            title:'Champiñones',
+            cant:'80g',
+            image:ingredientes_image.champinon,
+            id:'fp003'
+        },
+        {
+            title:'Chorizo',
+            cant:'40g',
+            image:ingredientes_image.chorizo,
+            id:'fp004'
         }
     ]
     }

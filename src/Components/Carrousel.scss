@@ -1,10 +1,32 @@
 .carrousel_container{
+    position: absolute;
     display: flex;
     width: 100%;
-    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    animation: movimiento 25s infinite linear;
+    /* overflow-x: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    } */
+    div{
 
-    img{
-        width: 90px;
-        height: 90px;
+        img{
+            width: 85px;
+            height: 85px;
+        }
+        p{
+            margin: -5px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@keyframes movimiento {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -1185px;
     }
 }

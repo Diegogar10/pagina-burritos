@@ -12,7 +12,10 @@ const Carrousel = ({ingredientes})=>{
                 image,
                 id
             })=>(
-                <img alt={title} id={id} src={image}/>
+                <div>
+                    <img alt={title} id={id} src={image}/>
+                    <p>{title}</p>
+                </div>
             ))}
         </div>
     );
