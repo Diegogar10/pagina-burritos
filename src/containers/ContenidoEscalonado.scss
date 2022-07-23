@@ -1,0 +1,39 @@
+
+$Color-pastel-transparencia:rgba(247,249,225,0.5);
+
+.escalonado {
+    margin-left: 45px;
+    margin: 10px;
+    width: 60%;
+    height: 120px;
+    background: $Color-pastel-transparencia;
+    border-radius: 7px;
+    &.x1 {
+        margin-left: 90px;
+    }
+    &.x2 {
+        margin-left: 135px;
+    }
+    &.x3 {
+        margin-left: 180px;
+    }
+    &.x4 {
+        margin-left: 225px;
+    }
+
+    h3, p{
+        margin:10px 20px;
+        font-family: 'Handlee', 'sand-serif';
+        font-size: 1.5rem;
+    } 
+
+    h3{
+        font-size: 1.7rem;
+        color: #00000079;
+    }
+
+    p{
+        margin-top: -5px;
+    }
+
+}

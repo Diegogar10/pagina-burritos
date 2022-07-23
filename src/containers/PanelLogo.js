@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PanelLogo = ({clase}) => {
 
@@ -6,7 +7,9 @@ const PanelLogo = ({clase}) => {
 
     return(
         <section className={clase}>
-            <img src={logo} alt="logo"></img>
+            <Link to='/'>
+                <img src={logo} alt="logo"></img>
+            </Link>
         </section>
     )
 }

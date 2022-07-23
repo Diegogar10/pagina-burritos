@@ -204,6 +204,23 @@ const links = {
             image:ingredientes_image.chorizo,
             id:'fp004'
         }
+    ],
+    nosotros:[
+        {
+            titulo: 'Misión',
+            texto: 'lorem isu',
+            clase: 'mision escalonado'
+        },
+        {
+            titulo: 'Visión',
+            texto: 'lorem isu',
+            clase: 'mision escalonado x1'
+        },
+        {
+            titulo: 'Valores',
+            texto: 'lorem isu',
+            clase: 'mision escalonado x3'
+        }
     ]
     }
 
