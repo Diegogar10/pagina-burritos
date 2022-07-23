@@ -37,7 +37,7 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 5fr 7fr;
-    grid-template-rows: 2fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 4fr;
     background-size: cover;
     box-shadow: rgba(50,0,0,0.95) 0px 0px 15px;
     transition: all 1s;
@@ -134,14 +134,14 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
 @media screen and (max-width:1024px){
     .Home {
         grid-template-columns: 3fr 5fr 7fr;
-        grid-template-rows: 2fr 3fr 3fr;
+        grid-template-rows: 2fr 3fr 4fr;
     }
 }
 
 @media screen and (max-width:768px){
     .Home {
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 2fr 3fr 3fr;
+        grid-template-rows: 2fr 3fr 4fr;
     }
 }
 @media screen and (max-width:425px){
