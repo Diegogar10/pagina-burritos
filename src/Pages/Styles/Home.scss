@@ -152,6 +152,12 @@ $Fuente-Titulos-Claros: 'Pacifico', sans-serif;
     
     .Home {
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 3fr 3fr;
     }
 }
+
+@media screen and (max-width:375px){
+    .Home {
+        grid-template-rows: 3fr 3fr 5fr;
+    }
+}
+

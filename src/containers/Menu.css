@@ -38,7 +38,7 @@ ul{
     color: aliceblue;
     text-shadow: aliceblue 0px 0px 3px;
 }
- @media screen and (min-height:750px){
+ @media screen and (max-width:750px){
     .menu__container{
         width: 100%;
         left: 0;

@@ -30,3 +30,17 @@
         left: -1185px;
     }
 }
+
+@media screen and (max-width:375px){
+    .carrousel_container{
+        div{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            p{
+                font-size: 1.0rem;
+            }
+        }   
+    }
+}

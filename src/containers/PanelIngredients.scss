@@ -24,3 +24,16 @@
         overflow: hidden;
     }
 }
+@media screen and (max-width:375px){
+
+    .description{
+        p{
+            font-size: 1.5rem;
+            span {
+                font-size: 1.5rem;
+
+            }
+
+        }
+    }    
+}
