@@ -20,7 +20,8 @@
     .socialMedia{
         position: absolute;
         display: grid;
-        grid-template-rows: 90% 10%;
+        grid-template-rows: 83% 17%;
+        height: 95%;
         place-items: center;
         right: 0;
         top: 0;
