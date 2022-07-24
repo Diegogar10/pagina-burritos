@@ -5,12 +5,14 @@ import './AnchorGeneric.scss';
 
 
 
-const AnchorGeneric = ({nombre, url}) => {
+const AnchorGeneric = ({nombre, url, change}) => {
 
     const { toggleMenuState } = React.useContext(AppContext);
 
     const changeMenuState = () => {
-        toggleMenuState();
+        if(change){
+            toggleMenuState();
+        }
     }
  return(
  

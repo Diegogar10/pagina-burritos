@@ -14,7 +14,7 @@ const PanelIngredients = ({clase}) => {
             <div className="ingredientes-container">
                 <Carrousel ingredientes={ingredients}></Carrousel>
             </div>
-            <AnchorGeneric nombre='Conoce más...' url='/arma-tu-burro' footerState='false' />
+            <AnchorGeneric nombre='Conoce más...' url='/arma-tu-burro' change={false}/>
         </section>
     )
 }
