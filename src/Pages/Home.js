@@ -1,14 +1,18 @@
-import react from "react";
 import React from "react";
+import { AppContext } from "../Context/AppContext";
 import { PanelIngredients } from "../Containers/PanelIngredients";
 import { PanelLogo } from "../Containers/PanelLogo";
 import { TextHome } from "../Containers/TextHome";
-import { AppContext } from "../Context/AppContext";
 import './Styles/Home.scss'
 
 const Home = ()=>{
 
-    const { state } = react.useContext(AppContext);
+    const { state, setHome } = React.useContext(AppContext);
+    
+    const changeFooter = React.useEffect(()=>{
+        setHome(true);
+    },[]);
+
 
     return(
         

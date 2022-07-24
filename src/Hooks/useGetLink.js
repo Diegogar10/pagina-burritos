@@ -25,7 +25,11 @@ const ingredientes_image = {
 
 const links = {
     menu:[{
-        title:'Nosotros',
+        title:'Home',
+        url:'/',
+        footer: true
+        },
+        {title:'Nosotros',
         url:'/nosotros',
         footer: false
         },
@@ -208,17 +212,23 @@ const links = {
     nosotros:[
         {
             titulo: 'Misión',
-            texto: 'lorem isu',
+            texto: [`Garantizar cada una de las expectativas de nuestros clientes 
+                    donde se brindará una atención de calidad y platos inigualables preparados con amor.`],
             clase: 'mision escalonado'
         },
         {
             titulo: 'Visión',
-            texto: 'lorem isu',
+            texto: [`Hacernos conocer a nivel local y nacional dejando en alto nuestros valores que reflejan 
+                    la vivencia de una experiencia única en una forma saludable de comer.`],
             clase: 'mision escalonado x1'
         },
         {
             titulo: 'Valores',
-            texto: 'lorem isu',
+            texto: ['+Brindar un experiencia al cliente a precios justos.',
+                    '+Alta calidad y eficiencia en atención a nuestro clientes.',    
+                    '+Pasión por la cocina, la alimentacion sana y de buena calidad.',
+                    '+Altos estandares de sanidad y profesionalismo en la preparación de nuestro alimentos.'
+                    ],
             clase: 'mision escalonado x3'
         }
     ]

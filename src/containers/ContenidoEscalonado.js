@@ -6,7 +6,9 @@ const ContenidoEscalonado = ({info})=> {
     return(
         <section className={info.clase}>
             <h3>{info.titulo}</h3>
-            <p>{info.texto}</p>
+            {info.texto.map((item =>(
+                <p>{item}</p>
+            )))}
         </section>
     );
 }

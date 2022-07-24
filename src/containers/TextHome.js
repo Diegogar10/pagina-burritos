@@ -1,6 +1,8 @@
 import React from "react";
 import { useGetLinks } from "../Hooks/useGetLink";
 import { AppContext } from "../Context/AppContext";
+import { AnchorGeneric } from "../Components/AnchorGeneric";
+import { Menu } from "./Menu";
 
 const TextHome = ({clase}) => {
    
@@ -36,7 +38,7 @@ const TextHome = ({clase}) => {
             setOptImage(images[optCount].title);
         }, 4500);
         return () => clearInterval(interval);
-      }, [state.menuState]);
+      }, [state.menuState, state.isHome]);
 
 
     return(

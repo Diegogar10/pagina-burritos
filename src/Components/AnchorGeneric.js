@@ -7,17 +7,16 @@ import './AnchorGeneric.scss';
 
 const AnchorGeneric = ({nombre, url, footerState}) => {
 
-    const { setHome } = React.useContext(AppContext);
+    const { toggleMenuState } = React.useContext(AppContext);
 
-    const changeFooter = value =>() => {
-        setHome(value);
+    const changeMenuState = () => {
+        toggleMenuState();
     }
-
  return(
  
     <li className="container__link">
         <Link to={url}>
-            <a href="" onClick={changeFooter(footerState)}>{nombre}</a>
+            <a href="" onClick={changeMenuState}>{nombre}</a>
         </Link>
     </li>
  );

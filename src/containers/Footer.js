@@ -3,7 +3,9 @@ import './Footer.css'
 
 const Footer = () => {
     return(
-        <footer>pie de pagina</footer>
+        <footer>
+            
+        </footer>
     );
 };
 

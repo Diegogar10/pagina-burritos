@@ -3,9 +3,10 @@ $Color-pastel-transparencia:rgba(247,249,225,0.5);
 
 .escalonado {
     margin-left: 45px;
-    margin: 10px;
+    margin: 5px;
     width: 60%;
-    height: 120px;
+    min-height: 110px;
+    text-align: justify;
     background: $Color-pastel-transparencia;
     border-radius: 7px;
     &.x1 {
@@ -29,7 +30,7 @@ $Color-pastel-transparencia:rgba(247,249,225,0.5);
 
     h3{
         font-size: 1.7rem;
-        color: #00000079;
+        color: #00000062;
     }
 
     p{
