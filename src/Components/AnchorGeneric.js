@@ -5,7 +5,7 @@ import './AnchorGeneric.scss';
 
 
 
-const AnchorGeneric = ({nombre, url, footerState}) => {
+const AnchorGeneric = ({nombre, url}) => {
 
     const { toggleMenuState } = React.useContext(AppContext);
 

@@ -26,27 +26,22 @@ const ingredientes_image = {
 const links = {
     menu:[{
         title:'Home',
-        url:'/',
-        footer: true
+        url:'/'
         },
         {title:'Nosotros',
-        url:'/nosotros',
-        footer: false
+        url:'/nosotros'
         },
         {
         title:'Recetas',
-        url: '/recetas', 
-        footer: false
+        url: '/recetas'
         }, 
         {
         title:'Arma tu burro',
-        url:'/arma-tu-burro',
-        footer: false
+        url:'/arma-tu-burro'
         },
         {
         title:'Contactenos',
-        url:'/contactenos',
-        footer: false
+        url:'/contactenos'
     }],
     redes:[{
         title:'Facebook',
