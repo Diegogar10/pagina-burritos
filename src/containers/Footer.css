@@ -1,11 +1,52 @@
 footer{
     position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     bottom: 0px;
     left: 0px;
     right: 0px;
     width: 75%;
-    height: 40px;
+    height: 45px;
     background-color: #f9b233;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
+}
+
+.social__container,
+.info__creadores {
+    display: flex;
+    flex-direction: row;
+}
+.info__creadores{
+    height: 45px;
+    justify-content: end;
+    align-items: center;
+}
+
+.info__container {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info__container h4, 
+.info__creadores h4{
+
+    font-size: 1.2rem;
+}
+.info__container p,
+.info__creadores p{
+    font-size: 1.0rem;
+}
+
+.logo__container{
+    margin: 0 5px;
+}
+
+.logo__container,
+.logo__container a,
+.logo__container a img{
+    width: 50px;
+    height: 40px;
 }

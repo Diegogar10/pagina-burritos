@@ -4,6 +4,9 @@ const icons = {
     Facebook : require ('../Images/components/facebook.png'),
     Instagram : require ('../Images/components/instagram.png'),
     Youtube : require ('../Images/components/youtube.png'),
+    FacebookV2 : require ('../Images/Footer/facebook.png'),
+    InstagramV2 : require ('../Images/Footer/instagram.png'),
+    YoutubeV2 : require ('../Images/Footer/youtube.png'),
     Whatsapp : require ('../Images/components/whatsapp.png'),
 }
 const ingredientes_image = {
@@ -58,6 +61,22 @@ const links = {
         url:'https://www.youtube.com/',
         urlImage:icons.Youtube
     }],
+    redes2:[{
+        title:'Facebook',
+        url:'https://www.facebook.com/',
+        urlImage:icons.FacebookV2
+    },
+    {
+        title:'Instagram',
+        url:'https://www.instagram.com/',
+        urlImage:icons.InstagramV2
+    },
+    {
+        title:'Youtube',
+        url:'https://www.youtube.com/',
+        urlImage:icons.YoutubeV2
+    }],
+    
     whatsapp:[
         {
             title:'Whatsapp',
