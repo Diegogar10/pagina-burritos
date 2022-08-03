@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e4de476.css",
-    "main.js": "/static/js/main.117aff8d.js",
+    "main.css": "/static/css/main.75434923.css",
+    "main.js": "/static/js/main.123e67cf.js",
     "static/media/home-fondo4hd.jpg": "/static/media/home-fondo4hd.c4c1e9a743d074dd9e5f.jpg",
     "static/media/home-fondo5hd.jpg": "/static/media/home-fondo5hd.3c2211ac57c07dd9997e.jpg",
     "static/media/Pacifico-Regular.ttf": "/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
@@ -19,6 +19,7 @@
     "static/media/pollo.png": "/static/media/pollo.2e98d6008e883ab21b1b.png",
     "static/media/cerdo.png": "/static/media/cerdo.2911c36cb5858cfbc06b.png",
     "static/media/guacamole.png": "/static/media/guacamole.bba84fcd248a2ae5044c.png",
+    "static/media/DF.png": "/static/media/DF.50ec44caa1ecf0aa91ee.png",
     "static/media/lechuga.png": "/static/media/lechuga.ba810083866c352a64e8.png",
     "static/media/chorizo.png": "/static/media/chorizo.d65d1eadc068e5a65fe3.png",
     "static/media/maiz.png": "/static/media/maiz.87b90ffb17e96e38b32e.png",
@@ -34,11 +35,11 @@
     "static/media/facebook.png": "/static/media/facebook.a5def58db1e9c1b38269.png",
     "static/media/pinonIcon.svg": "/static/media/pinonIcon.b66420a94cb2d408e51386755081d4ca.svg",
     "index.html": "/index.html",
-    "main.7e4de476.css.map": "/static/css/main.7e4de476.css.map",
-    "main.117aff8d.js.map": "/static/js/main.117aff8d.js.map"
+    "main.75434923.css.map": "/static/css/main.75434923.css.map",
+    "main.123e67cf.js.map": "/static/js/main.123e67cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e4de476.css",
-    "static/js/main.117aff8d.js"
+    "static/css/main.75434923.css",
+    "static/js/main.123e67cf.js"
   ]
 }
