@@ -48,12 +48,12 @@ const links = {
     }],
     redes:[{
         title:'Facebook',
-        url:'https://www.facebook.com/',
+        url:'https://www.facebook.com/tremendoburritoo/',
         urlImage:icons.Facebook
     },
     {
         title:'Instagram',
-        url:'https://www.instagram.com/',
+        url:'https://www.instagram.com/tremendoburritoco/',
         urlImage:icons.Instagram
     },
     {
@@ -63,12 +63,12 @@ const links = {
     }],
     redes2:[{
         title:'Facebook',
-        url:'https://www.facebook.com/',
+        url:'https://www.facebook.com/tremendoburritoo/',
         urlImage:icons.FacebookV2
     },
     {
         title:'Instagram',
-        url:'https://www.instagram.com/',
+        url:'https://www.instagram.com/tremendoburritoco/',
         urlImage:icons.InstagramV2
     },
     {
@@ -80,7 +80,7 @@ const links = {
     whatsapp:[
         {
             title:'Whatsapp',
-            url:'https://www.whatsapp.com/',
+            url:'https://api.whatsapp.com/send?phone=573052823480',
             urlImage:icons.Whatsapp
         }
     ],
@@ -245,6 +245,9 @@ const links = {
                     ],
             clase: 'mision escalonado x3'
         }
+    ],
+    armaTuBurro:[
+        
     ]
     }
 

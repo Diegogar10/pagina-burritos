@@ -4,7 +4,14 @@ const initialState = {
     typeStyle: false,
     menuState: false,
     optImage:'opt1', 
-    isHome:true
+    isHome:true,
+    stateButtons:{
+        buton1: false,
+        buton2: false,
+        buton3: false,
+        buton4: false,
+        buton5: false
+    }
 }
 
 const useInitialState = ()=>{
@@ -25,8 +32,24 @@ const useInitialState = ()=>{
         optImage: value,
     });
 
+    const setStateButtons = (id, value) => {
+
+        const arrayStateButtons = Object.entries(state.stateButtons);
+        const newArrayStateButtons = arrayStateButtons.map(item => {
+           if( item[0]===id ) item[1]=value;
+           return item;
+        });
+        const newStateButtons = Object.fromEntries(newArrayStateButtons);
+
+        setState({
+            ...state,
+            stateButtons: newStateButtons,
+        });
+    }
+
     return({
         state,
+        setStateButtons,
         toggleMenuState,
         setOptImage,
         setHome

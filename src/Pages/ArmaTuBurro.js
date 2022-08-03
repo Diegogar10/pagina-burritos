@@ -1,17 +1,35 @@
 import React from "react";
+import { PanelDescription } from "../Containers/PanelDescription";
 import { AppContext } from "../Context/AppContext";
+import './Styles/ArmaTuBurro.scss';
 
 const ArmaTuBurro = ()=>{
 
+    const data = {
+        class:'paso1',
+        isVisible: false,
+        position:'der',
+        number: 1,
+        src:'/'
 
-    const { setHome } = React.useContext(AppContext);
+    }
+
+    const { state, setHome, setStateButtons } = React.useContext(AppContext);
 
     const changeFooter = React.useEffect(()=>{
         setHome(false);
     },[]);
 
+    const setStateButtons2 = (id, value) => ()=>{
+        setStateButtons(id,value);
+    }
+
     return(
-        <h2>ArmaTuBurro</h2>
+        <div className="armatuburro__container">
+            <PanelDescription data={data} isVisible={false}>
+                <h3>Other content</h3>
+            </PanelDescription>
+        </div>
     );
 };
 
