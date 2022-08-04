@@ -7,8 +7,8 @@ const ArmaTuBurro = ()=>{
 
     const data = {
         class:'paso1',
-        isVisible: false,
-        position:'der',
+        isVisible: true,
+        position:'izq',
         number: 1,
         src:'/'
 

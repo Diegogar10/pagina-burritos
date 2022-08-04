@@ -1,0 +1,99 @@
+$color-panel-description: #F7DEA5;
+$color-numeral-description: #E64011;
+$color-boton:#f9b233;
+$color-oscuro:rgba(0, 0, 0, 0.605);
+$letra-principal: 'Handlee', sans-serif;
+
+.armatuburro__container{
+
+    align-items: center;
+
+    .visible,
+    .invisible {
+        position: relative;
+        background-color: $color-panel-description;
+        border-radius: 12px;
+        margin: 30px 0px;
+        width: 65%;
+        min-height: 130px;
+    }
+
+
+    .visible{
+      display: flex;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    .der,
+    .izq{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top:-20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $color-numeral-description;
+
+        h4{
+            font-family: $letra-principal;
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: $color-panel-description;;
+        }
+    }
+
+    .der{
+        right: -20px ;
+    }
+    .izq{
+        left: -20px ;
+    }
+
+    .armaTuBurro__content{
+        margin-left: 35px;
+    }
+
+
+    .button--der,
+    .button--izq {
+        position: absolute;
+        bottom: -50px;
+        background-color: $color-boton;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: #e86e4c solid 1px;
+        box-shadow:$color-oscuro 0px 0px 5px;
+        color: $color-oscuro;
+        font-size: 1.4rem;
+        font-family: $letra-principal;
+        font-weight: bold;
+        animation: tamano 2s linear infinite ;
+    }
+
+    
+    .button--der{
+        left: -80px;
+    }
+    .button--izq{
+        right: -80px;
+    }
+
+}
+
+@keyframes tamano {
+    0%{
+        transform: scale(1.0,1.0);
+    }
+    50%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1.0,1.0);
+    }
+    
+}
