@@ -26,6 +26,11 @@ const ingredientes_image = {
     queso:require ('../Images/components.carrousel/queso.png'),
 }
 
+const ArmaBurrito_image = {
+    flechaDer: require('../Images/ArmaBurrito/FlechaDer.png'),
+    flechaIzq: require('../Images/ArmaBurrito/FlechaIzq.png')
+}
+
 const links = {
     menu:[{
         title:'Home',
@@ -247,7 +252,42 @@ const links = {
         }
     ],
     armaTuBurro:[
-        
+        {
+            class:'paso1',
+            name:'buton1',
+            panel:'panel1',
+            isVisible: true,
+            position:'izq',
+            number: 1,
+            src:ArmaBurrito_image.flechaDer
+        },
+        {
+            class:'paso2',
+            name:'buton2',
+            panel:'panel2',
+            isVisible: false,
+            position:'der',
+            number: 2,
+            src:ArmaBurrito_image.flechaIzq
+        },
+        {
+            class:'paso3',
+            name:'buton3',
+            panel:'panel3',
+            isVisible: false,
+            position:'izq',
+            number: 3,
+            src:ArmaBurrito_image.flechaDer
+        },
+        {
+            class:'paso4',
+            name:'buton4',
+            panel:'panel4',
+            isVisible: false,
+            position:'der',
+            number: 4,
+            src:ArmaBurrito_image.flechaIzq
+        }
     ]
     }
 

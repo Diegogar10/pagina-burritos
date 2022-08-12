@@ -11,6 +11,13 @@ const initialState = {
         buton3: false,
         buton4: false,
         buton5: false
+    },
+    statePanels:{
+        panel1: true,
+        panel2: false,
+        panel3: false,
+        panel4: false,
+        panel5: false
     }
 }
 
@@ -40,7 +47,7 @@ const useInitialState = ()=>{
            return item;
         });
         const newStateButtons = Object.fromEntries(newArrayStateButtons);
-
+    
         setState({
             ...state,
             stateButtons: newStateButtons,
