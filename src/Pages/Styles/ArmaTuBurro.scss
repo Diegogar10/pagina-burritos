@@ -5,9 +5,36 @@ $linea-borde:  rgba(0, 0, 0, 0.259) 1px solid;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height:calc(100% - 40px);
     background: $Color-pastel-trans2;
     border-left: $linea-borde;
     border-right: $linea-borde;
     box-shadow: $Color-pastel-trans2 0px 0px 10px;
+}
+
+
+.armatuburro__container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.armatuburro__container::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.armatuburro__container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.armatuburro__container::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.armatuburro__container::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.armatuburro__container::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
