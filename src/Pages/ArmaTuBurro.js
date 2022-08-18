@@ -32,7 +32,7 @@ const ArmaTuBurro = ()=>{
                 
                 return(
                     <PanelDescription data={item} isPanelVisible={isVisiblePanel[1]} isButtonVisible={isVisibleButton[1]}>
-    
+                        {item.chieldren}
                     </PanelDescription>
                 )
             } 

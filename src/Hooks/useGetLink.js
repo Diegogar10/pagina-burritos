@@ -1,4 +1,5 @@
 import React from "react";
+import { Paso1 } from "../Containers/Paso1";
 
 const icons = {
     Facebook : require ('../Images/components/facebook.png'),
@@ -259,7 +260,8 @@ const links = {
             isVisible: true,
             position:'izq',
             number: 1,
-            src:ArmaBurrito_image.flechaDer
+            src:ArmaBurrito_image.flechaDer,
+            chieldren:<Paso1></Paso1>
         },
         {
             class:'paso2',
@@ -268,7 +270,8 @@ const links = {
             isVisible: false,
             position:'der',
             number: 2,
-            src:ArmaBurrito_image.flechaIzq
+            src:ArmaBurrito_image.flechaIzq,
+            chieldren:''
         },
         {
             class:'paso3',
@@ -277,7 +280,8 @@ const links = {
             isVisible: false,
             position:'izq',
             number: 3,
-            src:ArmaBurrito_image.flechaDer
+            src:ArmaBurrito_image.flechaDer,
+            chieldren:'hola'
         },
         {
             class:'paso4',
@@ -286,7 +290,41 @@ const links = {
             isVisible: false,
             position:'der',
             number: 4,
-            src:ArmaBurrito_image.flechaIzq
+            src:ArmaBurrito_image.flechaIzq,
+            chieldren:'',
+        }
+    ],
+    paso:[
+        {
+            paso:1,
+            opciones:[
+                {
+                    url:'',
+                    title:'Burrito Hogareño',
+                    price:12000,
+                    protein:1,
+                    base:7,
+                    addition:0,
+                    weigth:400
+                },
+                {
+                    url:'',
+                    title:'Burrito Valiente',
+                    price:18000,
+                    protein:2,
+                    base:7,
+                    addition:3,
+                    weigth:520
+                },{
+                    url:'',
+                    title:'Burrito Valiente',
+                    price:18000,
+                    protein:2,
+                    base:7,
+                    addition:3,
+                    weigth:520
+                }
+            ]
         }
     ]
     }
