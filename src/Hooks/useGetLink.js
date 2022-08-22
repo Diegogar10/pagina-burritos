@@ -299,7 +299,7 @@ const links = {
             paso:1,
             opciones:[
                 {
-                    url:'',
+                    url:'/',
                     title:'Burrito Hogareño',
                     price:12000,
                     protein:1,

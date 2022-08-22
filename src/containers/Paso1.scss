@@ -1,6 +1,20 @@
-.tarjetas__container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    
+.Container__paso1{
+        .description{
+                display:flex;
+                align-items: flex-start;
+                background: none;
+                border-radius: 0px;
+                box-shadow: none;
+                p, h3{
+                        text-align: justify;
+                        font-size: 1.3rem;
+                        font-family: 'Handlee', 'sand-serif';   
+                }
+        }
+        .tarjetas__container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            
+        }
 }

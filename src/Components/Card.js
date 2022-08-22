@@ -1,8 +1,9 @@
 import React from "react";
+import './Card.scss'
 
-const Target = ({info})=>{
+const Card = ({info})=>{
     return(
-        <div className="tarjet">
+        <div className="card">
             <img src={info.url}></img>
             <h3>{info.title}</h3>
             <h4>${info.price}</h4>
@@ -14,4 +15,4 @@ const Target = ({info})=>{
     );
 }
 
-export {Target};
+export {Card};

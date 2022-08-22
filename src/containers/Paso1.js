@@ -1,5 +1,5 @@
 import React from "react";
-import { Target } from "../Components/Target";
+import { Card } from "../Components/Card";
 import { useGetLinks } from "../Hooks/useGetLink";
 import './Paso1.scss';
 
@@ -14,8 +14,8 @@ const Paso1 = ()=>{
                 <p>Puedes escoger entre tres opciones, cada una tiene carateristicas y tamaños difernetes</p>
             </article>
             <div className="tarjetas__container">
-                {paso[0].opciones.map(item=>
-                    <Target info={item}></Target>
+                {paso[0].opciones.map(item =>
+                    <Card info={item}></Card>
                 )}
             </div>  
         </section>
