@@ -24,7 +24,7 @@ const Plantilla = ({children}) =>{
             <main className="main__content">
                 {children}
             </main>
-            <Asaid info={redes} what={whatsapp}/>
+            {isHome && <Asaid info={redes} what={whatsapp}/>}
             {!isHome && <Footer/>}
         </div>
     );

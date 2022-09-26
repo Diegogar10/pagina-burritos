@@ -50,3 +50,29 @@ footer{
     width: 50px;
     height: 40px;
 }
+@media screen and (max-width:1024px){
+    footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width:599px){
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        height: min-content;
+    }
+    .social__container{
+        margin: 10px;
+        justify-content: center;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .info__container, .info__creadores{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin: 0 20px;
+    }
+    .info__container{
+        align-items: start;
+    }
+}

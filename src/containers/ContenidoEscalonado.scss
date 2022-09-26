@@ -36,5 +36,24 @@ $Color-pastel-transparencia:rgba(247,249,225,0.5);
     p{
         margin-top: -5px;
     }
+}
 
+@media screen and (max-width:599px){
+    .escalonado {
+        width: 90%;
+        margin: 20px;
+        &.x1 {
+            margin-left: 20px;
+        }
+        &.x2 {
+            margin-left: 20px;
+        }
+        &.x3 {
+            margin-left: 20px;
+        }
+        &.x4 {
+            margin-left: 20px;
+        }
+    }
+     
 }
