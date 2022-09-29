@@ -15,6 +15,7 @@ $linea-borde:  rgba(0, 0, 0, 0.259) 1px solid;
 
     .Logo{
         width: 100%;
+        margin-left: -10px;
         background: none;
         box-shadow: none;
         justify-content: left;
@@ -26,5 +27,34 @@ $linea-borde:  rgba(0, 0, 0, 0.259) 1px solid;
         flex-direction: column;
         grid-row: 1 / 2;
         grid-column: 3 / 4;
+    }
+}
+
+@media screen and (max-width:768px){
+    .nosotros__container {
+        grid-template-columns: 1fr 2fr 2fr 6fr;
+        grid-template-rows: 4fr 3fr;
+        .Logo{
+            grid-row: 2 / 3;
+            grid-column: 2 / 5;
+        }
+        .nosotros__info {
+            grid-row: 1 / 3;
+            grid-column: 2 / 5;
+        }
+    }
+}
+
+@media screen and (max-width:599px){
+    .nosotros__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        .Logo{
+           display:  none;
+        }
+        .nosotros__info {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
     }
 }
