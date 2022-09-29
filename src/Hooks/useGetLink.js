@@ -29,7 +29,8 @@ const ingredientes_image = {
 
 const ArmaBurrito_image = {
     flechaDer: require('../Images/ArmaBurrito/FlechaDer.png'),
-    flechaIzq: require('../Images/ArmaBurrito/FlechaIzq.png')
+    flechaIzq: require('../Images/ArmaBurrito/FlechaIzq.png'),
+    iconBurro: require('../Images/ArmaBurrito/IconBurro.png')
 }
 
 const links = {
@@ -299,30 +300,30 @@ const links = {
             paso:1,
             opciones:[
                 {
-                    url:'/',
+                    url:ArmaBurrito_image.iconBurro,
                     title:'Burrito Hogareño',
-                    price:12000,
+                    price:12.000,
                     protein:1,
                     base:7,
                     addition:0,
                     weigth:400
                 },
                 {
-                    url:'',
+                    url:ArmaBurrito_image.iconBurro,
                     title:'Burrito Valiente',
-                    price:18000,
+                    price:18.000,
                     protein:2,
                     base:7,
                     addition:3,
                     weigth:520
                 },{
-                    url:'',
-                    title:'Burrito Valiente',
-                    price:18000,
-                    protein:2,
+                    url:ArmaBurrito_image.iconBurro,
+                    title:'Burrito Extremo',
+                    price:23.000,
+                    protein:3,
                     base:7,
-                    addition:3,
-                    weigth:520
+                    addition:7,
+                    weigth:720
                 }
             ]
         }

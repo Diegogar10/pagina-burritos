@@ -1,11 +1,36 @@
+$color-red: #E74210;
+
 .card{
     margin: 5px;
     border-radius: 5px;
     box-shadow: black 0px 0px 3px;
     min-width: 180px;
-    min-height: 200px;
+    max-width: 200px;
+    min-height: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    font-family: 'handlee', sans-serif;
+
+    img{
+        margin-top: 15px;
+        width: 55%;
+        height: 30%;
+    }
+    h3{
+        margin-top: 20px;
+        font-size: 1.6rem;
+
+    }
+    h4{
+        font-size: 1.6rem;
+        color: $color-red;
+    }
+    p{
+        font-size: 1.5rem;
+        span {
+            font-size: 1.1rem;
+        }
+    }
 }

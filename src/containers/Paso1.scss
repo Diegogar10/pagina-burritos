@@ -1,5 +1,6 @@
 .Container__paso1{
         .description{
+                width: 100%;
                 display:flex;
                 align-items: flex-start;
                 background: none;
@@ -7,9 +8,13 @@
                 box-shadow: none;
                 p, h3{
                         text-align: justify;
-                        font-size: 1.3rem;
+                        font-size: 1.5rem;
                         font-family: 'Handlee', 'sand-serif';   
                 }
+                p{
+                        font-weight: 100;
+                }
+
         }
         .tarjetas__container{
                 display: flex;
