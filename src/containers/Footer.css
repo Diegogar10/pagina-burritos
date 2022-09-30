@@ -60,7 +60,6 @@ footer{
     
     footer{
         
-        position: relative;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         height: min-content;
