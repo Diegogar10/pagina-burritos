@@ -18,6 +18,12 @@ const initialState = {
         panel3: false,
         panel4: false,
         panel5: false
+    },
+    modelCart:{
+        protein:0,
+        bases:[],
+        additions:0,
+        gravy:[]
     }
 }
 
@@ -54,12 +60,25 @@ const useInitialState = ()=>{
         });
     }
 
+    const setProtein = ({
+            protein: proteinNum,
+            additions: additionNum
+
+        }) => setState({
+        ...state,
+        modelCart:{
+            protein:proteinNum,
+            additions: additionNum
+        }
+    });
+
     return({
         state,
         setStateButtons,
         toggleMenuState,
         setOptImage,
-        setHome
+        setHome,
+        setProtein
     })
 }
 
