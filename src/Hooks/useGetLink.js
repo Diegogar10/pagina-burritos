@@ -1,5 +1,6 @@
 import React from "react";
 import { Paso1 } from "../Containers/Paso1";
+import { Paso2 } from "../Containers/Paso2";
 
 const icons = {
     Facebook : require ('../Images/components/facebook.png'),
@@ -272,7 +273,7 @@ const links = {
             position:'der',
             number: 2,
             src:ArmaBurrito_image.flechaIzq,
-            chieldren:''
+            chieldren:<Paso2></Paso2>
         },
         {
             class:'paso3',
@@ -306,7 +307,8 @@ const links = {
                     protein:1,
                     base:7,
                     addition:0,
-                    weigth:400
+                    weigth:400,
+                    funtion:1
                 },
                 {
                     url:ArmaBurrito_image.iconBurro,
@@ -315,7 +317,8 @@ const links = {
                     protein:2,
                     base:7,
                     addition:3,
-                    weigth:520
+                    weigth:520,
+                    funtion:1
                 },{
                     url:ArmaBurrito_image.iconBurro,
                     title:'Burrito Extremo',
@@ -323,7 +326,28 @@ const links = {
                     protein:3,
                     base:7,
                     addition:7,
-                    weigth:720
+                    weigth:720,
+                    funtion:1
+                }
+            ]
+        },
+        {
+            paso:2,
+            opciones:[
+                {
+                    url:ArmaBurrito_image.iconCarne,
+                    title:'Carne de res',
+                    funtion:2
+                },
+                {
+                    url:ArmaBurrito_image.iconCerdo,
+                    title:'Carne de cerdo',
+                    funtion:2
+                },
+                {
+                    url:ArmaBurrito_image.iconPollo,
+                    title:'Pollo',
+                    funtion:2
                 }
             ]
         }
