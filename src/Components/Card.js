@@ -2,15 +2,17 @@ import React from "react";
 import { AppContext } from "../Context/AppContext";
 import './Card.scss'
 
-const Card = ({info})=>{
+const Card = ({info, clase})=>{
 
 
-    const {state, setProtein} = React.useContext(AppContext);
 
-    const selectBurrito = ()=>{
+    const {setOption_statePanel, setProteins_statePanel} = React.useContext(AppContext);
+
+
+    const selectFunction = ()=>{
         
         if(info.funtion == 1){
-            setProtein(
+            setOption_statePanel(
                 {
                     protein:info.protein,
                     additions: info.addition
@@ -19,11 +21,10 @@ const Card = ({info})=>{
         } else if(info.funtion == 2){
             console.log('Hola mundo');
         }
-        console.log(state);
     }
 
     return(
-        <div className="card" onClick={selectBurrito}>
+        <div className={`card${clase}`} onClick={selectFunction} >
             <img src={info.url && info.url}></img>
             {info.title && <h3>{info.title}</h3>}
             {info.price && <h4>{`${info.price.toFixed(3)}`}</h4>}

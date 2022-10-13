@@ -1,5 +1,11 @@
 import React from "react";
 
+function* iterator(array) {
+        for(let value of array){
+            yield value;
+        }
+    }
+
 const initialState = {
     typeStyle: false,
     menuState: false,
@@ -21,10 +27,13 @@ const initialState = {
     },
     modelCart:{
         protein:0,
+        proteinAdd:[],
         bases:[],
         additions:0,
+        additionsAdd:[],
         gravy:[]
-    }
+    },
+    functionIterator: iterator(['buton1', 'buton2', 'buton3', 'buton4', 'buton5'])
 }
 
 const useInitialState = ()=>{
@@ -45,9 +54,31 @@ const useInitialState = ()=>{
         optImage: value,
     });
 
-    const setStateButtons = (id, value) => {
 
-        const arrayStateButtons = Object.entries(state.stateButtons);
+
+    const arrayButtons = Object.entries(state.stateButtons);
+
+    const generateArrayButtons = () => {
+
+        let idButtonNow = state.functionIterator.next().value;
+
+        const arrayButtonsResult = arrayButtons.map((item)=>{
+            if(idButtonNow == item[0]){
+                return [item[0], true];
+            }else {
+                return [item[0], item[1]];
+            }
+        });
+
+        const newStateButtons = Object.fromEntries(arrayButtonsResult);
+        
+        return newStateButtons;
+        
+        /* console.log('state', state.stateButtons);
+        
+        console.log('array-buttons', arrayButtons);
+ */
+        /* const arrayStateButtons = Object.entries(state.stateButtons);
         const newArrayStateButtons = arrayStateButtons.map(item => {
            if( item[0]===id ) item[1]=value;
            return item;
@@ -57,8 +88,42 @@ const useInitialState = ()=>{
         setState({
             ...state,
             stateButtons: newStateButtons,
-        });
+        }); */
     }
+    const setOption_statePanel = ({
+                    protein: proteinNum,
+                    additions: additionNum
+                }) => {
+
+                    const newStateButtons = generateArrayButtons();
+
+                    setState({
+                        ...state,
+                        stateButtons: newStateButtons,
+                        modelCart: {
+                            protein:proteinNum,
+                            additions: additionNum                            
+                        }
+                    })
+    }
+
+
+    const setProteins_statePanel = ({
+        protein: proteinNum,
+        additions: additionNum
+    }) => {
+
+        const newStateButtons = generateArrayButtons();
+
+        setState({
+            ...state,
+            stateButtons: newStateButtons,
+            modelCart: {
+                protein:proteinNum,
+                additions: additionNum                            
+            }
+        })
+}
 
     const setProtein = ({
             protein: proteinNum,
@@ -74,7 +139,8 @@ const useInitialState = ()=>{
 
     return({
         state,
-        setStateButtons,
+        setOption_statePanel, 
+        setProteins_statePanel, 
         toggleMenuState,
         setOptImage,
         setHome,

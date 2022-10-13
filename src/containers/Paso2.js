@@ -17,7 +17,7 @@ const Paso2 = () => {
             </article>
             <div className="tarjetas__container">
                 {(paso[1].opciones.map(item =>
-                           <Card info={item} ></Card>
+                           <Card info={item} clase=''></Card>
                             )
                     )
                 }

@@ -8,7 +8,7 @@ const Paso1 = ()=>{
 
     const {paso} = useGetLinks();
     const {state} = React.useContext(AppContext);
-    
+
 
     return(
         <section className="Container__paso1">
@@ -19,9 +19,9 @@ const Paso1 = ()=>{
             <div className="tarjetas__container">
                 {(state.modelCart.protein === 0) 
                     && (paso[0].opciones.map(item =>
-                            <Card info={item} ></Card>
+                            <Card info={item} clase=''></Card>
                         ))
-                    || (<Card info={paso[0].opciones[state.modelCart.protein - 1]}></Card>)
+                    || (<Card info={paso[0].opciones[state.modelCart.protein - 1]} clase='Select'></Card>)
                 }
             </div>  
         </section>
