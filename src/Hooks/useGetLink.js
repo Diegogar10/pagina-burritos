@@ -337,17 +337,20 @@ const links = {
                 {
                     url:ArmaBurrito_image.iconCarne,
                     title:'Carne de res',
-                    funtion:2
+                    funtion:2,
+                    clase:''
                 },
                 {
                     url:ArmaBurrito_image.iconCerdo,
                     title:'Carne de cerdo',
-                    funtion:2
+                    funtion:2,
+                    clase:''
                 },
                 {
                     url:ArmaBurrito_image.iconPollo,
                     title:'Pollo',
-                    funtion:2
+                    funtion:2,
+                    clase:''
                 }
             ]
         }

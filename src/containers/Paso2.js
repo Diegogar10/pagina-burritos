@@ -9,18 +9,24 @@ const Paso2 = () => {
     const {paso} = useGetLinks();
     const {state} = React.useContext(AppContext);
 
+    
+    const proteinArray = state.modelCart.proteinAdd;
+
     return(
         <section className="Container__paso2">
             <article className="description">
-                <h3>{(state.modelCart.protein >= 2)&& `Escoge ${state.modelCart.protein} proteinas!` || 'Escoge la proteina que mas te guste!'}</h3>
-                <p>{(state.modelCart.protein >= 2)&& 'Elige las que más te gusten!'}</p>
+                <h3>{(state.modelCart.protein >= 2 && `Escoge ${state.modelCart.protein} proteinas!`) || 'Escoge la proteina que mas te guste!'}</h3>
+                <p>{(state.modelCart.protein >= 2) && 'Elige las que más te gusten!'}</p>
             </article>
             <div className="tarjetas__container">
-                {(paso[1].opciones.map(item =>
-                           <Card info={item} clase=''></Card>
+            {(paso[1].opciones.map(item =>
+                           <Card 
+                                info={item} 
+                                clase={(proteinArray.includes(item.title) && 'Selected') || ''}>
+                            </Card>
                             )
                     )
-                }
+            } 
             </div>  
         </section>
     )

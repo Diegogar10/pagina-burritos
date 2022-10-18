@@ -63,7 +63,7 @@ const useInitialState = ()=>{
         let idButtonNow = state.functionIterator.next().value;
 
         const arrayButtonsResult = arrayButtons.map((item)=>{
-            if(idButtonNow == item[0]){
+            if(idButtonNow === item[0]){
                 return [item[0], true];
             }else {
                 return [item[0], item[1]];
@@ -101,50 +101,60 @@ const useInitialState = ()=>{
                         ...state,
                         stateButtons: newStateButtons,
                         modelCart: {
+                            ...state.modelCart,
                             protein:proteinNum,
                             additions: additionNum                            
                         }
                     })
     }
 
-
-    const setProteins_statePanel = ({
-        protein: proteinNum,
-        additions: additionNum
-    }) => {
+    const statePanel = () => {
 
         const newStateButtons = generateArrayButtons();
 
         setState({
             ...state,
             stateButtons: newStateButtons,
-            modelCart: {
-                protein:proteinNum,
-                additions: additionNum                            
-            }
         })
-}
+    }
 
-    const setProtein = ({
-            protein: proteinNum,
-            additions: additionNum
 
-        }) => setState({
-        ...state,
-        modelCart:{
-            protein:proteinNum,
-            additions: additionNum
-        }
-    });
+    const setProtein_statePanel = ({
+            protein,
+        }) => {
+            const proteinNumber = state.modelCart.protein;
+            const proteinArray = state.modelCart.proteinAdd;
+            if(proteinArray.length ===  proteinNumber - 1){
+                const newArray = [...state.modelCart.proteinAdd, protein];
+                const newStateButtons = generateArrayButtons();
+                setState({
+                    ...state,
+                    stateButtons: newStateButtons,
+                    modelCart:{
+                        ...state.modelCart,
+                        proteinAdd:newArray,
+                    }
+                });                
+            }else if( proteinArray.length <  proteinNumber - 1){
+                const newArray = [...state.modelCart.proteinAdd, protein];
+                setState({
+                    ...state,
+                    modelCart:{
+                        ...state.modelCart,
+                        proteinAdd:newArray,
+                    }
+                });
+            }
+        } 
+        
 
     return({
         state,
         setOption_statePanel, 
-        setProteins_statePanel, 
+        setProtein_statePanel,
         toggleMenuState,
         setOptImage,
-        setHome,
-        setProtein
+        setHome
     })
 }
 

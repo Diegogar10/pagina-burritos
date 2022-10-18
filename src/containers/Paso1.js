@@ -17,11 +17,11 @@ const Paso1 = ()=>{
                 <p>Puedes escoger entre tres opciones, cada una tiene carateristicas y tamaños difernetes</p>
             </article>
             <div className="tarjetas__container">
-                {(state.modelCart.protein === 0) 
+                {(state.modelCart.protein === 0 
                     && (paso[0].opciones.map(item =>
                             <Card info={item} clase=''></Card>
-                        ))
-                    || (<Card info={paso[0].opciones[state.modelCart.protein - 1]} clase='Select'></Card>)
+                        )))
+                    || (<Card info={paso[0].opciones[state.modelCart.protein - 1]} clase='Selected'></Card>)
                 }
             </div>  
         </section>
