@@ -1,6 +1,7 @@
 $color-red: #E74210;
 
 .card, .cardSelected{
+    position: relative;
     margin: 5px;
     border-radius: 5px;
     box-shadow: black 0px 0px 3px;
@@ -38,6 +39,14 @@ $color-red: #E74210;
         span {
             font-size: 1.1rem;
         }
+    }
+    button{
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
     }
 }
 .cardSelected{

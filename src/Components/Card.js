@@ -6,18 +6,24 @@ const Card = ({info, clase})=>{
 
     const {setOption_statePanel, setProtein_statePanel} = React.useContext(AppContext);
 
-    const selectFunction = ()=>{
-        if(info.funtion === 1){
+    const selectFunction = ()=> {
+        if(info.funtion === 1 && clase !== 'Selected'){
             setOption_statePanel(
                 {
                     protein:info.protein,
                     additions: info.addition
                 }
             );
-        } else if(info.funtion === 2){    
+        } else if(info.funtion === 2 && clase !== 'Selected'){    
                 setProtein_statePanel({protein:info.title});
+        }
     }
-}
+    const deleteFunction = ()=> {
+        if(info.funtion === 1 && clase === 'Selected'){
+            console.log('funcionEliminar')
+        }
+    }
+    
 
 
     return(
@@ -29,6 +35,7 @@ const Card = ({info, clase})=>{
             {info.base && <p>{`(${info.base}) Ingreientes base`}</p>}
             {info.addition >= 1 && <p>{`(${info.addition}) Adiciones a elección`}</p>} 
             {info.weigth && <p><span>{`(Aprox ${info.weigth} g)`}</span></p>}
+            {clase === 'Selected' && <button onClick={deleteFunction}></button>}
         </div>
     );
 }

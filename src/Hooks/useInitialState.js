@@ -73,23 +73,8 @@ const useInitialState = ()=>{
         const newStateButtons = Object.fromEntries(arrayButtonsResult);
         
         return newStateButtons;
-        
-        /* console.log('state', state.stateButtons);
-        
-        console.log('array-buttons', arrayButtons);
- */
-        /* const arrayStateButtons = Object.entries(state.stateButtons);
-        const newArrayStateButtons = arrayStateButtons.map(item => {
-           if( item[0]===id ) item[1]=value;
-           return item;
-        });
-        const newStateButtons = Object.fromEntries(newArrayStateButtons);
-    
-        setState({
-            ...state,
-            stateButtons: newStateButtons,
-        }); */
     }
+    
     const setOption_statePanel = ({
                     protein: proteinNum,
                     additions: additionNum
