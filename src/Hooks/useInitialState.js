@@ -74,7 +74,7 @@ const useInitialState = ()=>{
         
         return newStateButtons;
     }
-    
+
     const setOption_statePanel = ({
                     protein: proteinNum,
                     additions: additionNum
@@ -93,44 +93,34 @@ const useInitialState = ()=>{
                     })
     }
 
-    const statePanel = () => {
-
-        const newStateButtons = generateArrayButtons();
-
-        setState({
-            ...state,
-            stateButtons: newStateButtons,
-        })
-    }
-
-
     const setProtein_statePanel = ({
             protein,
-        }) => {
-            const proteinNumber = state.modelCart.protein;
-            const proteinArray = state.modelCart.proteinAdd;
-            if(proteinArray.length ===  proteinNumber - 1){
-                const newArray = [...state.modelCart.proteinAdd, protein];
-                const newStateButtons = generateArrayButtons();
-                setState({
-                    ...state,
-                    stateButtons: newStateButtons,
-                    modelCart:{
-                        ...state.modelCart,
-                        proteinAdd:newArray,
-                    }
-                });                
-            }else if( proteinArray.length <  proteinNumber - 1){
-                const newArray = [...state.modelCart.proteinAdd, protein];
-                setState({
-                    ...state,
-                    modelCart:{
-                        ...state.modelCart,
-                        proteinAdd:newArray,
-                    }
-                });
-            }
-        } 
+    }) => 
+    {
+        const proteinNumber = state.modelCart.protein;
+        const proteinArray = state.modelCart.proteinAdd;
+        if(proteinArray.length ===  proteinNumber - 1){
+            const newArray = [...state.modelCart.proteinAdd, protein];
+            const newStateButtons = generateArrayButtons();
+            setState({
+                ...state,
+                stateButtons: newStateButtons,
+                modelCart:{
+                    ...state.modelCart,
+                    proteinAdd:newArray,
+                }
+            });                
+        }else if( proteinArray.length <  proteinNumber - 1){
+            const newArray = [...state.modelCart.proteinAdd, protein];
+            setState({
+                ...state,
+                modelCart:{
+                    ...state.modelCart,
+                    proteinAdd:newArray,
+                }
+            });
+        }
+    } 
         
 
     return({
