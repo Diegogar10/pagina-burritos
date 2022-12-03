@@ -2,14 +2,15 @@ $Color-pastel-trans2: rgba(247, 253, 220, 0.9);
 $linea-borde:  rgba(0, 0, 0, 0.259) 1px solid;
 
 .armatuburro__container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
     width: 100%;
-    height:calc(100% - 40px);
+    height: 100vh;
     background: $Color-pastel-trans2;
     border-left: $linea-borde;
     border-right: $linea-borde;
     box-shadow: $Color-pastel-trans2 0px 0px 10px;
+    overflow: scroll;
 }
 
 
@@ -37,4 +38,4 @@ $linea-borde:  rgba(0, 0, 0, 0.259) 1px solid;
 
 .armatuburro__container::-webkit-scrollbar-track {
     border-radius: 10px;  
-}
+} 
