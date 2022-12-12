@@ -1,12 +1,26 @@
-import { createMachine } from "xstate";
+import { assign, createMachine } from "xstate";
 
 const burritoMachine = createMachine({
   id: "Arma tu burro",
   initial: "selectBurro",
+  context: {
+    step: 1,
+    option: '',
+    proteins: [],
+    addition: [],
+    withoutIngredients: [],
+    drinks:''
+  },
   states: {
     selectBurro: {
       on: {
-        HOGARENO: "selectProteins1",
+        HOGARENO:{
+          target:"selectProteins1",
+          actions: assign({
+            step: (context, event) => event.step,
+            option: (context, event) => event.opt,
+          })
+        },
         VALIENTE: "selectProteins1",
         EXTREMO: "selectProteins1",
         CANCEL: "selectBurro",
@@ -14,25 +28,45 @@ const burritoMachine = createMachine({
     },
     selectProteins1: {
       on: {
-        COMPLETECOUNTS: "defineDislikes",
+        COMPLETECOUNTS: {
+          target:"defineDislikes",
+          actions: assign({
+            step: (context, event) => event.step,
+          })
+        },
         CANCEL: "selectBurro",
       },
     },
     defineDislikes: {
       on: {
-        COMPLETECOUNTS: "selectAdditions",
+        COMPLETECOUNTS: {
+          target:"selectAdditions",
+          actions: assign({
+            step: (context, event) => event.step,
+          })
+        },
         CANCEL: "selectBurro",
       },
     },
     selectAdditions: {
       on: {
-        COMPLETECOUNTS: "withCombo",
+        COMPLETECOUNTS:{
+          target:"withCombo",
+          actions: assign({
+            step: (context, event) => event.step,
+          })
+        },
         CANCEL: "selectBurro",
       },
     },
     withCombo: {
       on: {
-        YES: "optionAddCart",
+        YES: {
+          target:"optionAddCart",
+          actions: assign({
+            step: (context, event) => event.step,
+          })
+        },
         NOT: "optionAddCart",
       },
     },
@@ -42,7 +76,13 @@ const burritoMachine = createMachine({
         CONTINUE: "selectBurro",
       },
     },
-  },
-});
+  }
+},
+{
+  actions: {
+    sumaEstado: () => console.log('hh'),
+  }
+}
+);
 
 export default burritoMachine;
